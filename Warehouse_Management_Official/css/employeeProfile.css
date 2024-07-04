@@ -1,0 +1,246 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.header {
+    background-color: #ffffff;
+    color: white;
+    padding: 10px 20px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-avatar-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.avatar-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+}
+
+.avatar-icon:hover {
+    /* Hiệu ứng khi di chuột qua */
+    opacity: 0.7;
+}
+
+
+.header-option-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.header-option-btn .button-icon {
+    width: 40px;
+    height: 40px;
+}
+
+
+.main-container {
+    display: flex;
+    height: calc(100vh - 55px);
+}
+
+.sidebar {
+    width: 84px;
+    background-color: rgba(86, 85, 155, 1);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, width 0.3s ease;
+}
+
+.sidebar-hidden {
+    transform: translateX(-84px);
+}
+
+.sidebar-menu,
+.sidebar-bottom-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.sidebar-menu li,
+.sidebar-bottom-menu li {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.sidebar-menu li a,
+.sidebar-bottom-menu li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+}
+
+.menu-icon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 5px;
+}
+
+.sidebar-menu li a:hover,
+.sidebar-bottom-menu li a:hover {
+    background-color: #495057;
+    border-radius: 5px;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: margin-left 0.3s ease, width 0.3s ease;
+}
+
+.content-expanded {
+    margin-left: 0;
+    width: calc(100% - 0px);
+}
+
+.content-collapsed {
+    margin-left: 84px;
+    width: calc(100% - 84px);
+}
+
+.profile-section,
+.password-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-section h2,
+.password-section h2 {
+    margin-top: 0;
+    color: rgba(86, 85, 155, 1)
+}
+
+.profile-container {
+    display: flex;
+    gap: 20px;
+}
+
+.profile-left, .profile-right {
+    flex: 1;
+}
+
+.profile-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.browse-button {
+    padding: 8px 12px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-size: 14px;
+}
+
+.browse-button:hover {
+    background-color: #004494;
+}
+
+.profile-right {
+    flex-grow: 1;
+}
+
+#employee-info-form .form-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#employee-info-form label {
+    font-weight:normal;
+    min-width: 150px;
+}
+
+#employee-info-form input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(50% - 20px);
+    background-color: rgba(217, 217, 217, 0.8);
+}
+
+.password-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.password-section .form-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.password-section label {
+    font-weight:normal;
+    min-width: 200px;
+}
+
+.password-section input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%;
+    margin-right: 450px;
+}
+
+.form-button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.change-button {
+    padding: 15px 30px;
+    background-color: rgba(86, 85, 155, 1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.change-button:hover {
+    background-color: #218838;
+}
