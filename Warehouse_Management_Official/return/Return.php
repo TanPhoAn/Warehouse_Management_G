@@ -48,7 +48,7 @@
             <div class="content" id="content">
                 <div id="blockAInfo" class="block-info features" style="display: block;">
                     <div class="block-header">
-                        <p id="inStockText">Shipment Return</p>
+                        <p id="inStockText">Return</p>
                         <div class="button-container">
                             <a href="../pick/Pick.php"><button  type="button" class="btn btn-brand" id="pickStockButton">Delivery</button></a>
                         </div>
@@ -73,7 +73,7 @@
                     </div>
                     <hr>
                     <div class="shipment-details">
-                        <div class="shipment-column">Shipment ID</div>
+                        <div class="shipment-column">ID</div>
                         <div class="shipment-column">Pick ID</div>
                         <div class="shipment-column">Return Time</div>
                         <div class="shipment-column">Problem</div>
