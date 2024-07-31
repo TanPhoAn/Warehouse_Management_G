@@ -16,7 +16,7 @@ include '../employee/employeeHandler.php';
     // changePassword($_POST, $new_user);
     if(isset($_POST['update_employee'])){
         updateEmployee($_POST, $error);
-        var_dump($_POST);
+        
     }
     //var_dump($_SESSION);
     
